@@ -11,6 +11,11 @@
 h1 {
   text-align: center;
   text-decoration: double;
-  color: darkblue;
-  size: 5000px;
+  size: 500px;
+}
+
+h1, h2, h3 {
+  color: rgb(2, 85, 2);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500px;
 }

@@ -4,3 +4,7 @@
 
 // dragon 
 
+class Pet {
+  
+}
+
