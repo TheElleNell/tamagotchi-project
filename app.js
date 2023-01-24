@@ -30,6 +30,18 @@ function nameDragon () {
 }
 
 
+function deadDragon1() {
+
+  let deadDragon = alert("Your dragon needs rest")
+
+  if (Sunny.rest <= 0){
+  return deadDragon
+  }
+
+
+}
+
+// deadDragon1()
 
 // SETTING UP REMOVING DRAGON
 
@@ -69,8 +81,15 @@ function feedClick() {
   // document.body.style.backgroundImage = "url(assets/1590956.gif)"
 
   console.log("After Feeding", Sunny)
-
+  if (Sunny.rest < -5 ){
+    alert("Your dragon needs rest")
+  }
+  else if (Sunny.happiness > 50){
+    alert("Your dragon needs food")
+  // deadDragon1()
+  // deadDragon1()
   // removeDragon()
+}
 }
 
 // SETTING UP REST FUNCTION 
@@ -83,13 +102,29 @@ restDragon.addEventListener("click", restClick)
 function restClick() {
   Sunny.hunger += -20
   Sunny.rest += 10
-  Sunny.happiness += 5
+  Sunny.happiness += -5
 
   document.getElementById("dragon").src = "assets/resting-dragon1.gif"
  
   console.log("After rest", Sunny)
+  if (Sunny.rest < -5){
+    alert("Your dragon needs rest")
+  }  
+  else if (Sunny.happiness > 50){
+    alert("Your dragon needs food")
+  // deadDragon1()
+  // deadDragon1()
+}
 }
 
+
+
+
+// let deadDragon = alert("Your dragon needs rest")
+
+
+
+// deadDragon()
 // SETTING UP THE HAPPINESS FUNCTION 
 
 console.log("Before Happy", Sunny)
@@ -99,29 +134,29 @@ let happyDragon = document.querySelector(".happy")
 happyDragon.addEventListener("click", happyClick)
 
 function happyClick() {
-  Sunny.hunger += 5
-  Sunny.rest += 5
+  Sunny.hunger += -5
+  Sunny.rest += -5
   Sunny.happiness += 30
 
   document.getElementById("dragon").src = "assets/flying-fixed.gif"
 
   console.log("After happy", Sunny)
+
+
+  if (Sunny.rest < -5){
+    alert("Your dragon needs food")
+  }
+  // deadDragon1()
 }
 
 // FUNCTIONS FOR GAME
 
 // DRAGON NEEDS REST 
 
-function dragonNeedRest() {
-  if (Sunny.rest === "-20"){
-  alert("Your dragon needs rest")
-  }
 
 
-}
 
-
-console.log(dragonNeedRest())
+// console.log(dragonNeedRest())
 
 
 
