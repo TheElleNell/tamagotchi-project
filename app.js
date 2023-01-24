@@ -11,6 +11,7 @@ class Dragon {
   }
 }
 
+// NAME DRAGON 
 const Sunny = new Dragon('Sunny')
 
 console.log(Sunny.hunger)
@@ -22,7 +23,7 @@ let dragonName1 = document.querySelector(".dragon-input-name")
 startGameButton.addEventListener("click", nameDragon)
 
 function nameDragon () {
-  dragonName1 = ""
+  dragonName = ""
   let dragonNaming = prompt("Please enter the name")
   dragonName1.innerHTML += dragonNaming
   
@@ -30,7 +31,17 @@ function nameDragon () {
 
 
 
+// SETTING UP REMOVING DRAGON
 
+// let removeDragon= document.getElementsById(".dragon")
+// removeDragon.removeChild
+
+function removeDragon() {
+  document.getElementById('#dragon').remove()
+}
+
+// stack images 
+// absolute 
 
 // nameDragon()
 
@@ -47,7 +58,11 @@ function feedClick() {
   Sunny.rest += -10
   Sunny.happiness += 5
 
+  document.body.style.backgroundImage = "url(assets/1590956.gif)"
+
   console.log("After Feeding", Sunny)
+
+  removeDragon()
 }
 
 // SETTING UP REST FUNCTION 
@@ -62,6 +77,8 @@ function restClick() {
   Sunny.rest += 10
   Sunny.happiness += 5
 
+  document.body.style.backgroundImage = "url(assets/image_processing20210506-22509-1re4amp.gif)"
+ 
   console.log("After rest", Sunny)
 }
 
@@ -83,7 +100,50 @@ function happyClick() {
   console.log("After happy", Sunny)
 }
 
+// SET AGE OF DRAGON
 
+// let dragonAge = document.querySelector(".dragon-age")
+
+// function increaseAge() {
+//   this.age.innerHTML = parseInt(this.age.innerHTML) +1
+// }
+
+let ageInterval = setInterval(function() {
+  
+  Sunny.age += 1
+  let dragonAge = document.querySelector(".dragon-age")
+  // ageNumber = parseInt()
+  dragonAge.innerHTML += 1
+
+
+  
+  // parseInt(dragonAge)
+  console.log(dragonAge)
+
+  console.log(Sunny)
+
+}, 3000)
+
+console.log(ageInterval)
+
+
+
+
+
+
+
+
+// SECTION 7 - using setinterval to run decreaseMetrics and increaseAge methods every 3 seconds
+    // need to have explicit reference to the increaseAge method in order to work 
+    // let interval = setInterval(function(){
+    //   tomagotchiInstance.decreaseMetrics()
+    //   tomagotchiInstance.increaseAge()
+    //   // SECTION 8 - if the method reachEnd is true, then stop the decreaseMetrics and increaseAge methods and end the game
+    //    if (tomagotchiInstance.reachEnd() === true){
+    //        clearInterval(interval)
+    //        tomagotchiInstance.endGame()
+    //        }
+    //   }, 3000);
 
 // prompt
 
