@@ -10,7 +10,7 @@
 
 body {
   background-color: rgb(24, 65, 3);
-  border-style: dashed;
+  /* border-style: dashed; */
 }
 h1 {
   text-align: center;
@@ -57,4 +57,12 @@ button {
 
 .border {
   style: dotten; 
+}
+#style-input {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: double;
+  color: rgb(255, 81, 0);
+  
+
 }
