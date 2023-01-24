@@ -9,47 +9,75 @@
   <title>Tamagotchi Project</title>
 </head>
 
+<h1>Dragon Life</h1>
+
+
 <body>
-  <h1>Dragon Life</h1>
-
-  <h2>Welcome to Dragon Life!</h2>
-
-  <h2>A fun new game where you will have to work hard and quickly in order to keep your dragon alive.....but watch out,
-    there are some obsticales along the way....</h2>
-
-  <h3>To begin the game, enter your dragons name and click "submit" (Choose wisely)</h3>
 
 
-  <input type="name" placeholder="Dragon Name Here">
-
-  <button type="dragon name">Submit</button>
-
-  <br>
-  <br>
-  <br>
 
 
-  <button type="feed">Feed Your Dragon</button>
 
-  <br>
-  <br>
+  <section class="modal">
+    <div id="modal content">
 
-  <button type="fly">Let Your Dragon Fly</button>
 
-  <br>
-  <br>
+      <h2>Welcome to Dragon Life!</h2>
 
-  <button type="sleep">Go to Dragon Den to Rest</button>
+      <h2>A fun new game where you will have to work hard and quickly in order to keep your dragon alive.....but watch
+        out,
+        there are some obsticales along the way....</h2>
+
+      <h3>To begin the game, enter your dragons name and click "submit" (Choose wisely)</h3>
+
+      <!-- <input class="dragon-name-input" type="name" placeholder="Dragon Name Here"> -->
+
+      <button class="dragon-name">Start Game</button>
+
+
+      <h3>Your dragons name is now: <div class="dragon-input-name"></div>
+      </h3>
+
+    </div>
+  </section>
 
   <br>
   <br>
+  <br>
 
+  <div class="active buttons">
+    <button class="feed">Feed Your Dragon</button>
+    <label for="hunger"> Hunger Level </label>
+    <progress id="hunger" value="0" max="10"></progress>
+    <br>
+    <br>
+
+    <button class="happy">Let Your Dragon Fly</button>
+    <label for="Happiness">Happiness Level</label>
+    <progress id="energy" value="0" max="10"></progress>
+    <br>
+    <br>
+
+    <button class="rest">Go to Dragon Den to Rest</button>
+    <label for="sleep">Sleep Level</label>
+    <progress id="boredom" value="0" max="10"></progress>
+    <br>
+    <br>
+  </div>
   <script type=" text/javascript" src="app.js"></script>
 
-  <img ref="cloud" src="assets/billy-huynh-v9bnfMCyKbg-unsplash.jpg">
+  <!-- <img ref="cloud" src="assets/billy-huynh-v9bnfMCyKbg-unsplash.jpg"> -->
 
 
-  <img ref="dragon" src="assets/dragon-g45cff4192_1920.png">
+
+  <div class="game-statistics">
+    <label for="Final Score">Final Score</label> <label for="FINAL SCORE"></label>
+
+    <div class="finalScore-input-name"></div>
+  </div>
+
+
+  <!-- <img ref="dragon" src="assets/dragon-g45cff4192_1920.png"> -->
 </body>
 
 </html>

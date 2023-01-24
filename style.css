@@ -8,13 +8,20 @@
   height:100px;
 } */
 
+body {
+  background-color: lightblue;
+}
 h1 {
   text-align: center;
   text-decoration: double;
-  size: 500px;
+  font-weight: 91x;
+  text-shadow: 0in;
+  color: rgb(2, 85, 2);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
 }
 
-h1, h2, h3 {
+h2, h3 {
   color: rgb(2, 85, 2);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-weight: 500px;
