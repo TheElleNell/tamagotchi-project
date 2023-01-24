@@ -33,17 +33,24 @@ function nameDragon () {
 
 // SETTING UP REMOVING DRAGON
 
-// let removeDragon= document.getElementsById(".dragon")
+// let removeDragon= document.getElementById(".dragon")
 // removeDragon.removeChild
 
-function removeDragon() {
-  document.getElementById('#dragon').remove()
-}
+// let removeDragon= document.getElementById(".dragon")
 
-// stack images 
-// absolute 
+let removeDragon= document.getElementById(".dragon")
 
-// nameDragon()
+// removeDragon.addEventListener("click", removeDragonFunction)
+
+// function removeDragonFunction() {
+
+//   removeDragon.addEventListener('click', () => {
+//   document.getElementById("dragon").style.display = "none"
+//   })
+//   console.log("is this working")
+// }
+
+// removeDragonFunction()
 
 // SETTING UP FEED FUNCTION 
 
@@ -57,12 +64,13 @@ function feedClick() {
   Sunny.hunger += 10
   Sunny.rest += -10
   Sunny.happiness += 5
-
-  document.body.style.backgroundImage = "url(assets/1590956.gif)"
+  // document.getElementById("dragon").style.display = "none"
+  document.getElementById("dragon").src = "assets/fire-dragon.gif"
+  // document.body.style.backgroundImage = "url(assets/1590956.gif)"
 
   console.log("After Feeding", Sunny)
 
-  removeDragon()
+  // removeDragon()
 }
 
 // SETTING UP REST FUNCTION 
@@ -77,7 +85,7 @@ function restClick() {
   Sunny.rest += 10
   Sunny.happiness += 5
 
-  document.body.style.backgroundImage = "url(assets/image_processing20210506-22509-1re4amp.gif)"
+  document.getElementById("dragon").src = "assets/resting-dragon1.gif"
  
   console.log("After rest", Sunny)
 }
@@ -95,10 +103,27 @@ function happyClick() {
   Sunny.rest += 5
   Sunny.happiness += 30
 
-  document.body.style.backgroundImage = "url(assets/de6inxb-3d0d453b-abbf-4ed0-a863-ea5ba9f95d6a.gif)"
+  document.getElementById("dragon").src = "assets/flying-fixed.gif"
 
   console.log("After happy", Sunny)
 }
+
+// FUNCTIONS FOR GAME
+
+// DRAGON NEEDS REST 
+
+function dragonNeedRest() {
+  if (Sunny.rest === "-20"){
+  alert("Your dragon needs rest")
+  }
+
+
+}
+
+
+console.log(dragonNeedRest())
+
+
 
 // SET AGE OF DRAGON
 
@@ -133,17 +158,7 @@ function happyClick() {
 
 
 
-// SECTION 7 - using setinterval to run decreaseMetrics and increaseAge methods every 3 seconds
-    // need to have explicit reference to the increaseAge method in order to work 
-    // let interval = setInterval(function(){
-    //   tomagotchiInstance.decreaseMetrics()
-    //   tomagotchiInstance.increaseAge()
-    //   // SECTION 8 - if the method reachEnd is true, then stop the decreaseMetrics and increaseAge methods and end the game
-    //    if (tomagotchiInstance.reachEnd() === true){
-    //        clearInterval(interval)
-    //        tomagotchiInstance.endGame()
-    //        }
-    //   }, 3000);
+// NOTES 
 
 // prompt
 
