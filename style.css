@@ -10,6 +10,7 @@
 
 body {
   background-color: rgb(24, 65, 3);
+  border-style: dashed;
 }
 h1 {
   text-align: center;
@@ -52,4 +53,8 @@ button {
   vertical-align: text-top;
   margin-right: 150px;
   padding-bottom: 100%
+}
+
+.border {
+  style: dotten; 
 }

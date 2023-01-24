@@ -108,23 +108,23 @@ function happyClick() {
 //   this.age.innerHTML = parseInt(this.age.innerHTML) +1
 // }
 
-let ageInterval = setInterval(function() {
+// let ageInterval = setInterval(function() {
   
-  Sunny.age += 1
-  let dragonAge = document.querySelector(".dragon-age")
-  // ageNumber = parseInt()
-  dragonAge.innerHTML += 1
+//   Sunny.age += 1
+//   let dragonAge = document.querySelector(".dragon-age")
+//   // ageNumber = parseInt()
+//   dragonAge.innerHTML += 1
 
 
   
-  // parseInt(dragonAge)
-  console.log(dragonAge)
+//   // parseInt(dragonAge)
+//   console.log(dragonAge)
 
-  console.log(Sunny)
+//   console.log(Sunny)
 
-}, 3000)
+// }, 3000)
 
-console.log(ageInterval)
+// console.log(ageInterval)
 
 
 
