@@ -172,7 +172,6 @@ function happyClick() {
 
 // FUNCTIONS FOR GAME
 
-// DRAGON NEEDS REST 
 
 
 
