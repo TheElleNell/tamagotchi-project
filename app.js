@@ -89,8 +89,13 @@ function feedClick() {
   // deadDragon1()
   // deadDragon1()
   // removeDragon()
+
+  } else if (Sunny.rest < -45){
+    alert("Your dragon has died") 
+    document.getElementById("dragon").src = " "
+  }  
 }
-}
+
 
 // SETTING UP REST FUNCTION 
 console.log("Before Rest", Sunny)
@@ -114,17 +119,29 @@ function restClick() {
     alert("Your dragon needs food")
   // deadDragon1()
   // deadDragon1()
+  }
+  else if (Sunny.rest < -45){
+      alert("Your dragon has died") 
+      document.getElementById("dragon").src = " "
+    }  
+  }
+
+
+
+
+
+function deadDragon() {
+  if (Sunny.rest < -45){
+    alert("Your dragon has died") 
+    document.getElementById("dragon").src = " "
+  }  
+
+
 }
-}
 
 
 
-
-// let deadDragon = alert("Your dragon needs rest")
-
-
-
-// deadDragon()
+deadDragon()
 // SETTING UP THE HAPPINESS FUNCTION 
 
 console.log("Before Happy", Sunny)
@@ -147,7 +164,11 @@ function happyClick() {
     alert("Your dragon needs food")
   }
   // deadDragon1()
-}
+  // else if (Sunny.rest = -40)
+  //   alert("Your dragon has died") 
+  //   document.getElementById("dragon").src = "assets/dragon-bone.png"
+  }  
+
 
 // FUNCTIONS FOR GAME
 
@@ -162,27 +183,28 @@ function happyClick() {
 
 // SET AGE OF DRAGON
 
-// let dragonAge = document.querySelector(".dragon-age")
+let dragonAge = document.querySelector(".dragon-age")
 
-// function increaseAge() {
-//   this.age.innerHTML = parseInt(this.age.innerHTML) +1
-// }
+function increaseAge() {
+  this.age.innerHTML = parseInt(this.age.innerHTML) +1
+}
 
-// let ageInterval = setInterval(function() {
+let ageInterval = setInterval(function() {
   
-//   Sunny.age += 1
-//   let dragonAge = document.querySelector(".dragon-age")
-//   // ageNumber = parseInt()
-//   dragonAge.innerHTML += 1
-
+  Sunny.age += 1
+  let dragonAge = document.querySelector(".dragon-age")
+  // parseInt(dragonAge)
+  // ageNumber = parseInt()
+  dragonAge.innerHTML += 1
+ 
 
   
-//   // parseInt(dragonAge)
-//   console.log(dragonAge)
+  // parseInt(dragonAge)
+  console.log(dragonAge)
 
-//   console.log(Sunny)
+  console.log(Sunny)
 
-// }, 3000)
+}, 1000)
 
 // console.log(ageInterval)
 
