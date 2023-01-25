@@ -1,5 +1,7 @@
 // TAMAGOTCHI PROJECT
 
+// DRAGON LIFE
+
 
 class Dragon {
   constructor(name, age, hunger, happiness, rest) {
@@ -203,7 +205,7 @@ let ageInterval = setInterval(function() {
 
   console.log(Sunny)
 
-}, 1000)
+}, 5000)
 
 // console.log(ageInterval)
 
